@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiservicios - Seguridad y Saneamiento Ambiental</title>
+    <meta name="description" content="Soluciones integrales en saneamiento básico, seguridad industrial y salud ocupacional.">
+    
+    <!-- Tailwind CSS (Estilos base) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Iconos FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Top Bar -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 hidden md:block">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2 hover:text-blue-400 transition-colors"><i class="fa-solid fa-phone text-blue-500"></i> +57 305 700 2164</span>
+                <span class="flex items-center gap-2 hover:text-blue-400 transition-colors"><i class="fa-solid fa-envelope text-blue-500"></i> info@multiservicios.com</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-blue-500"></i> Lun - Vie: 8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300 border-b border-slate-100" id="header">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-slate-900 flex items-center gap-2 tracking-tight">
+                <div class="bg-blue-600 text-white p-1.5 rounded-lg shadow-lg shadow-blue-600/20">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="text-blue-900 tracking-tight">MULTISERVICIOS</span>
+            </a>
+            
+            <nav class="hidden lg:flex space-x-8 items-center">
+                <a href="#inicio" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Inicio</a>
+                <a href="#nosotros" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Nosotros</a>
+                <a href="#servicios" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Servicios</a>
+                <a href="#testimonios" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-sm uppercase tracking-wide">Clientes</a>
+                <a href="#contacto" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <i class="fa-regular fa-paper-plane"></i> Cotizar Ahora
+                </a>
+            </nav>
+
+            <button id="menu-btn" class="lg:hidden text-slate-800 focus:outline-none p-2 rounded-md hover:bg-slate-100">
+                <i class="fa-solid fa-bars text-2xl transition-transform duration-300"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl h-screen top-full left-0 z-40">
+            <div class="flex flex-col px-6 py-8 space-y-6 text-center">
+                <a href="#inicio" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Inicio</a>
+                <a href="#nosotros" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Nosotros</a>
+                <a href="#servicios" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Servicios</a>
+                <a href="#testimonios" class="text-lg text-slate-700 font-bold hover:text-blue-600 p-2">Testimonios</a>
+                <a href="#contacto" class="text-white bg-blue-600 py-4 rounded-xl font-bold shadow-lg mx-4 mt-4">Solicitar Cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-20 pb-28 lg:pt-32 lg:pb-40 overflow-hidden bg-gradient-hero">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-blue-200 badge-pulse shadow-sm">
+                        <i class="fa-solid fa-shield-check"></i> Garantía de Cumplimiento Legal
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] mb-6">
+                        Seguridad y Bienestar Integral para su <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Empresa</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+                        Evite sanciones y proteja lo más importante. Expertos en normativa sanitaria, seguridad industrial y salud ocupacional con certificación garantizada.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/20 text-center flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            Agendar Visita Técnica <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#servicios" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 hover:text-blue-600 hover:border-blue-200 transition-all text-center flex items-center justify-center gap-2">
+                            Ver Portafolio
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-8">
+                        <div class="flex flex-col">
+                            <p class="text-3xl font-bold text-slate-900">+12</p>
+                            <p class="text-sm text-slate-500 font-medium">Años de Trayectoria</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-3xl font-bold text-slate-900">100%</p>
+                            <p class="text-sm text-slate-500 font-medium">Concepto Favorable</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-3xl font-bold text-slate-900">24/7</p>
+                            <p class="text-sm text-slate-500 font-medium">Atención Inmediata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute top-10 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Inspector" class="w-full h-[600px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-lg border border-white/50 max-w-xs transform transition-transform group-hover:translate-y-[-5px]">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                    <i class="fa-solid fa-file-circle-check text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-900 text-lg">Documentación al Día</p>
+                                    <p class="text-xs text-slate-500 mt-1">Cumplimiento total</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Strip -->
+    <div class="bg-white border-y border-slate-100 py-10">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-8">Entidades y Normativa que Cumplimos</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 hover:opacity-100 transition-opacity duration-500">
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-800 hover:text-blue-600 transition-colors cursor-default"><i class="fa-solid fa-building-columns text-3xl text-slate-400"></i> INVIMA</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-800 hover:text-blue-600 transition-colors cursor-default"><i class="fa-solid fa-heart-pulse text-3xl text-slate-400"></i> SEC. SALUD</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-800 hover:text-blue-600 transition-colors cursor-default"><i class="fa-solid fa-fire-extinguisher text-3xl text-slate-400"></i> BOMBEROS</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-800 hover:text-blue-600 transition-colors cursor-default"><i class="fa-solid fa-hard-hat text-3xl text-slate-400"></i> MINTRABAJO</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-24 bg-slate-50 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                <div class="lg:w-1/2 sticky top-24">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-blue-600 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipo" class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]">
+                        <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-8 rounded-2xl shadow-xl hidden md:block transform group-hover:scale-105 transition-transform">
+                            <p class="text-4xl font-bold mb-1">Calidad</p>
+                            <p class="text-blue-100">Certificada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-4 flex items-center gap-2">
+                        <span class="w-8 h-0.5 bg-blue-600"></span> Nuestra Empresa
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Comprometidos con la seguridad y el bienestar</h3>
+                    <div class="prose prose-lg text-slate-600 mb-10 text-justify">
+                        <p class="mb-6">En <strong>MULTISERVICIOS</strong>, nos dedicamos a ofrecer soluciones integrales y de alta calidad para garantizar la seguridad y el bienestar de su empresa y colaboradores. Contamos con un equipo de expertos comprometidos con el cumplimiento de normas y estándares que permiten un entorno laboral seguro, saludable y eficiente.</p>
+                        <p>Con nuestra asesoría y ejecución técnica, su empresa estará siempre preparada para enfrentar los desafíos del día a día, cumpliendo con los requisitos normativos y manteniendo altos estándares de calidad. ¡Confíe en nosotros para cuidar lo más importante, su salud y seguridad!</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-blue-200 transition-all group">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-bullseye text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-lg mb-2">Misión</h4>
+                            <p class="text-slate-500 text-sm">Proporcionar ambientes seguros y saludables mediante servicios técnicos especializados.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-blue-200 transition-all group">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                <i class="fa-regular fa-eye text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-lg mb-2">Visión</h4>
+                            <p class="text-slate-500 text-sm">Ser el aliado preferido a nivel nacional en gestión de riesgos sanitarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-white relative overflow-hidden scroll-mt-20">
+        <div class="absolute top-0 left-0 w-full h-[500px] bg-slate-50 -z-10 skew-y-3 origin-top-left"></div>
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-4">Nuestros Servicios</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Soluciones Integrales Especializadas</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Capacitación Manipulación de Alimentos</h4>
+                    <p class="text-slate-600 mb-6 text-sm">Formación certificada para personal que tiene contacto directo con alimentos.</p>
+                    <ul class="check-list text-sm text-slate-500 space-y-3 bg-slate-50 p-4 rounded-lg">
+                        <li>Certificado válido por 1 año</li>
+                        <li>Cumplimiento Resolución 2674</li>
+                        <li>Material didáctico y carnet</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bug-slash"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Fumigación Profesional</h4>
+                    <p class="text-slate-600 mb-6 text-sm">Control integrado de plagas con productos amigables con el medio ambiente.</p>
+                    <ul class="check-list text-sm text-slate-500 space-y-3 bg-slate-50 p-4 rounded-lg">
+                        <li>Desinsectación y Desratización</li>
+                        <li>Productos con registro sanitario</li>
+                        <li>Certificado y Ficha Técnica</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Certificado Médico</h4>
+                    <p class="text-slate-600 mb-6 text-sm">Evaluaciones médicas ocupacionales para garantizar la aptitud física.</p>
+                    <ul class="check-list text-sm text-slate-500 space-y-3 bg-slate-50 p-4 rounded-lg">
+                        <li>Examen de ingreso y retiro</li>
+                        <li>Examen periódico</li>
+                        <li>Énfasis osteomuscular</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Lavado de Tanques</h4>
+                    <p class="text-slate-600 mb-6 text-sm">Limpieza y desinfección profunda de tanques de almacenamiento.</p>
+                    <ul class="check-list text-sm text-slate-500 space-y-3 bg-slate-50 p-4 rounded-lg">
+                        <li>Eliminación de sedimentos</li>
+                        <li>Desinfección de paredes</li>
+                        <li>Certificado de lavado</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Plan de Saneamiento Básico</h4>
+                    <p class="text-slate-600 mb-6 text-sm">Elaboración e implementación de los 4 programas básicos exigidos.</p>
+                    <ul class="check-list text-sm text-slate-500 space-y-3 bg-slate-50 p-4 rounded-lg">
+                        <li>Programa de Limpieza</li>
+                        <li>Control de Plagas</li>
+                        <li>Carpeta de soportes</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-fire-extinguisher"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Recarga de Extintores</h4>
+                    <p class="text-slate-600 mb-6 text-sm">Mantenimiento preventivo y correctivo de equipos contra incendios.</p>
+                    <ul class="check-list text-sm text-slate-500 space-y-3 bg-slate-50 p-4 rounded-lg">
+                        <li>Servicio a domicilio</li>
+                        <li>Préstamo de equipos</li>
+                        <li>Etiqueta vigente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <div class="bg-blue-600 py-16 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10">
+            <i class="fa-solid fa-shield-halved text-[300px] text-white transform translate-x-1/3 -translate-y-1/4"></i>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Garantía de Cumplimiento</h2>
+            <p class="text-blue-100 max-w-2xl mx-auto text-lg mb-8">Todos nuestros servicios incluyen la documentación exigida por la Secretaría de Salud y entes de control.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg text-white flex items-center gap-3 border border-white/20">
+                    <i class="fa-solid fa-check-circle text-green-400 text-xl"></i>
+                    <span>Concepto Técnico Favorable</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg text-white flex items-center gap-3 border border-white/20">
+                    <i class="fa-solid fa-check-circle text-green-400 text-xl"></i>
+                    <span>Personal Certificado SENA</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg text-white flex items-center gap-3 border border-white/20">
+                    <i class="fa-solid fa-check-circle text-green-400 text-xl"></i>
+                    <span>Productos Biodegradables</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-slate-50 relative scroll-mt-20">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-50 hidden lg:block clip-diagonal"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
+                
+                <div class="lg:w-5/12 bg-gradient-blue p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-4">¡Contáctenos Hoy!</h3>
+                        <p class="text-blue-100 mb-10 text-lg">Solicite su cotización gratuita.</p>
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0 backdrop-blur-sm"><i class="fa-solid fa-phone text-white text-xl"></i></div>
+                                <div><p class="font-bold text-xs text-blue-200 uppercase mb-1">Línea de Atención</p><p class="text-white text-xl font-semibold">+57 305 700 2164</p></div>
+                            </div>
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0 backdrop-blur-sm"><i class="fa-brands fa-whatsapp text-white text-xl"></i></div>
+                                <div><p class="font-bold text-xs text-blue-200 uppercase mb-1">WhatsApp Directo</p><p class="text-white text-xl font-semibold">+57 305 700 2164</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-white/10 rounded-full"></div>
+                </div>
+                
+                <div class="lg:w-7/12 p-10 lg:p-12">
+                    <form id="contactForm" class="relative">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-8">Envíenos un mensaje</h3>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2" for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" required class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white outline-none transition-all" placeholder="Su nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2" for="empresa">Empresa</label>
+                                <input type="text" id="empresa" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white outline-none transition-all" placeholder="Empresa">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2" for="email">Email</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white outline-none transition-all" placeholder="su@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2" for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" required class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white outline-none transition-all" placeholder="305 700 2164">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold text-slate-700 mb-2" for="servicio">Servicio de Interés</label>
+                            <select id="servicio" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white outline-none transition-all cursor-pointer">
+                                <option value="" disabled selected>Seleccione una opción...</option>
+                                <option>Fumigación Profesional</option>
+                                <option>Lavado de Tanques</option>
+                                <option>Capacitación Manipulación de Alimentos</option>
+                                <option>Recarga de Extintores</option>
+                                <option>Plan de Saneamiento Básico</option>
+                                <option>Certificado Médico</option>
+                                <option>Otro / Asesoría General</option>
+                            </select>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-sm font-bold text-slate-700 mb-2" for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" rows="3" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white outline-none transition-all" placeholder="Describa sus necesidades..."></textarea>
+                        </div>
+                        <button type="button" onclick="enviarWhatsApp()" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/30 transform hover:-translate-y-1 flex justify-center items-center gap-2 cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Solicitar Cotización al WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 pt-20 pb-10 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:col-span-1">
+                    <a href="#" class="text-2xl font-extrabold text-white flex items-center gap-2 mb-6">
+                        <div class="bg-blue-600 text-white p-1 rounded">
+                            <i class="fa-solid fa-shield-halved text-sm"></i>
+                        </div>
+                        MULTISERVICIOS
+                    </a>
+                    <p class="text-slate-400 text-sm">Su aliado estratégico en soluciones de seguridad y saneamiento.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Enlaces Rápidos</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#nosotros" class="hover:text-blue-400 transition-colors">Nosotros</a></li>
+                        <li><a href="#servicios" class="hover:text-blue-400 transition-colors">Servicios</a></li>
+                        <li><a href="#contacto" class="hover:text-blue-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+                &copy; 2024 Multiservicios S.A.S. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/573057002164" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg shadow-green-500/40 hover:bg-green-600 transition-all hover:scale-110 flex items-center justify-center w-16 h-16 group">
+        <i class="fa-brands fa-whatsapp text-3xl group-hover:animate-bounce"></i>
+    </a>
+
+    <!-- Tu archivo de scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
